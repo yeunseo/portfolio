@@ -7,9 +7,9 @@
 
   --color-dark-white: #bdbdbd;
 
-  --color-pink: #fe918d;
+  --color-pink: #cf8eba;
 
-  --color-dark-pink: #ff6863;
+  --color-light-pink: #dc9db7;
 
   --color-dark-grey: #4d4d4d;
 
@@ -64,6 +64,13 @@ a {
 ul {
   list-style: none;
   padding-left: 0px;
+}
+
+button {
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 /* Typography */
 h1 {
@@ -123,12 +130,40 @@ p {
   border: 1px solid var(--color-white);
 }
 .navbar__menu__item:hover {
-  background-color: var(--color-dark-pink);
+  background-color: var(--color-light-pink);
 }
 .icon {
   width: 32px;
   height: 32px;
   transform: translate(0%, 23%);
+}
+
+/* Home */
+#home {
+  background: url(imgs/home-background.png) center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+}
+
+.home__title,
+.home__description {
+  color: var(--color-white);
+}
+
+.home__contact {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
+  color: var(--color-white);
 }
 .school__logo {
   width: 128px;
