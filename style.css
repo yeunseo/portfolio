@@ -391,7 +391,22 @@ p {
   color: var(--color-yellow);
   transition: all var(--animation-duration) ease in;
 }
-
+/* Scroll */
+.arrow_up {
+  color: var(--color-light-pink);
+  font-size: 50px;
+  margin: 15px;
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  opacity: 0;
+  transition: all var(--animation-duration) ease-in-out;
+  pointer-events: none;
+}
+.arrow_up.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
   .navbar__toggle-btn {
