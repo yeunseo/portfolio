@@ -35,12 +35,6 @@ contactMe.addEventListener("click", () => {
   scrollIntoView("#contact");
 });
 
-// 함수 - 지정한 위치로 스크롤
-function scrollIntoView(selector) {
-  const scrollTo = document.querySelector(selector);
-  scrollTo.scrollIntoView({ behavior: "smooth", block: "center" });
-  console.log(selector, "로 이동");
-}
 // 스크롤시 Home section 투명화
 const home = document.querySelector(".home__container");
 const homeHeight = home.getBoundingClientRect().height;
@@ -64,3 +58,30 @@ document.addEventListener("scroll", () => {
     arrowUp.classList.remove("visible");
   }
 });
+
+// Projects filtering
+const workBtnContainer = document.querySelector(".work__categories");
+const projectContainer = document.querySelector(".work__projects");
+const projects = document.querySelectorAll(".project");
+workBtnContainer.addEventListener("click", (e) => {
+  //필터값이 없다면(span 부분을 클릭한 경우) parent node의 값을 받아오겠다
+  const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+  if (filter == null) {
+    return;
+  }
+  console.log(filter);
+  projects.forEach((project) => {
+    console.log(project.dataset.type);
+    if (filter === "*" || filter == project.dataset.type) {
+      project.classList.remove("visible");
+    } else {
+      project.classList.add("invisible");
+    }
+  });
+});
+
+// 함수 - 지정한 위치로 스크롤
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({ behavior: "smooth", block: "center" });
+}

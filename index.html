@@ -240,23 +240,28 @@
         <h1>My work</h1>
         <h3>Projects</h3>
         <div class="work__categories">
-          <button class="category__btn active">
+          <button class="category__btn active" data-filter="*">
             All <span class="category__count">4</span>
           </button>
-          <button class="category__btn">
+          <button class="category__btn" data-filter="front-end">
             Front-end <span class="category__count">3</span>
           </button>
-          <button class="category__btn">
+          <button class="category__btn" data-filter="back-end">
             Back-end <span class="category__count">2</span>
           </button>
-          <button class="category__btn">
+          <button class="category__btn" data-filter="mobile">
             Mobile <span class="category__count">1</span>
           </button>
         </div>
-        <!-- project 1 -->
+
         <div class="work__projects">
-          <a href="" class="project" target="blank">
-            <!-- 이미지 추가해야함 -->
+          <!-- project 1 -->
+          <a
+            href="http://www.naver.com"
+            class="project"
+            target="blank"
+            data-type="front-end"
+          >
             <img
               src="/imgs/projects/bdata.png"
               alt="따릉하오"
@@ -268,6 +273,23 @@
                 >서울시 공공자전거 따릉이 이용 & 중국인 관광객을 이용한 역사문화
                 관광지 활성화를 위한 웹</span
               >
+            </div>
+          </a>
+          <!-- project 2 -->
+          <a
+            href="http://www.naver.com"
+            class="project"
+            target="blank"
+            data-type="back-end"
+          >
+            <img
+              src="/imgs/projects/example.jpeg"
+              alt="공손한 고양이"
+              class="project__img"
+            />
+            <div class="project__description">
+              <h4>공손한 고양이</h4>
+              <span>제발요</span>
             </div>
           </a>
         </div>
