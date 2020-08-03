@@ -94,5 +94,5 @@ workBtnContainer.addEventListener("click", (e) => {
 // 함수 - 지정한 위치로 스크롤
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
-  scrollTo.scrollIntoView({ behavior: "smooth", block: "center" });
+  scrollTo.scrollIntoView({ behavior: "smooth" });
 }
