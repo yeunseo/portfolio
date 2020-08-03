@@ -59,7 +59,7 @@ document.addEventListener("scroll", () => {
   }
 });
 
-// Projects filtering
+// Projects filtering + animation
 const workBtnContainer = document.querySelector(".work__categories");
 const projectContainer = document.querySelector(".work__projects");
 const projects = document.querySelectorAll(".project");
@@ -69,15 +69,18 @@ workBtnContainer.addEventListener("click", (e) => {
   if (filter == null) {
     return;
   }
-  console.log(filter);
-  projects.forEach((project) => {
-    console.log(project.dataset.type);
-    if (filter === "*" || filter == project.dataset.type) {
-      project.classList.remove("visible");
-    } else {
-      project.classList.add("invisible");
-    }
-  });
+  projectContainer.classList.add("animation_out");
+  setTimeout(() => {
+    console.log("Filter:", filter);
+    projects.forEach((project) => {
+      if (filter === "*" || filter === project.dataset.type) {
+        project.classList.remove("invisible");
+      } else {
+        project.classList.add("invisible");
+      }
+    });
+    projectContainer.classList.remove("animation_out");
+  }, 300);
 });
 
 // 함수 - 지정한 위치로 스크롤
