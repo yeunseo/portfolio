@@ -23,6 +23,10 @@
 
   --color-orange: #feb546;
 
+  --color-peach: #ffbd59;
+
+  --color-dark-peach: #ff9a00;
+
   --color-black: #000000;
   /* Font size */
   --font-large: 48px;
@@ -118,7 +122,7 @@ p {
 }
 
 #navbar.navbar--dark {
-  background-color: var(--color-pink);
+  background-color: var(--color-peach);
   padding: 7px;
 }
 
@@ -140,7 +144,7 @@ p {
 
 .navbar__menu__item:hover {
   border: 1px solid var(--color-white);
-  background-color: var(--color-light-pink);
+  background-color: var(--color-dark-peach);
 }
 .icon {
   width: 32px;
@@ -186,7 +190,7 @@ p {
 }
 
 .home__contact:hover {
-  background-color: var(--color-light-pink);
+  background-color: var(--color-dark-peach);
 }
 
 /* Section common */
@@ -212,9 +216,9 @@ p {
   height: 170px;
   line-height: 170px;
   margin: auto;
-  color: var(--color-blue);
+  color: var(--color-peach);
   font-size: 70px;
-  border: 5px solid var(--color-blue);
+  border: 5px solid var(--color-peach);
   border-radius: 50%;
   margin-bottom: 16px;
 }
@@ -222,7 +226,7 @@ p {
   transition: all var(--animation-duration) ease;
 }
 .major__icon:hover i {
-  color: var(--color-light-pink);
+  color: var(--color-yellow);
   transform: rotate(-30deg) scale(1.1);
 }
 .major__title,
@@ -316,28 +320,10 @@ p {
 }
 .category__btn.selected,
 .category__btn:hover {
-  background-color: var(--color-pink);
+  background-color: var(--color-peach);
   color: var(--color-white);
 }
-.category__btn.selected .category__count,
-.category__btn:hover .category__count {
-  opacity: 1;
-  top: 0;
-}
-.category__count {
-  background-color: var(--color-orange);
-  border-radius: 50%;
-  color: var(--color-white);
-  width: 24px;
-  height: 24px;
-  line-height: 24px;
-  display: inline-block;
-  position: absolute;
-  top: -20px;
-  right: 16px;
-  opacity: 0;
-  transition: all var(--animation-duration) ease-in;
-}
+
 .work__projects {
   display: flex;
   flex-wrap: wrap;
@@ -436,12 +422,12 @@ p {
 
 /* Contact */
 #contact {
-  background-color: var(--color-pink);
+  background-color: var(--color-peach);
 }
 .contact__title,
 .contact__email,
 .contact__rights {
-  color: var(--color-light-white);
+  color: var(--color-white);
 }
 .contact__title {
   margin: 30px;

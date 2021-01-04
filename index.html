@@ -3,11 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eunseo's Portfolio</title>
-    <meta
-      name="description"
-      content="Portfolio for world-renowned web developer Eunseo^-^;;;;"
-    />
+    <title>유은서 Portfolio</title>
     <meta name="author" content="Eunseo" />
     <link rel="icon" type="image/png" href="imgs/favicon.png" />
     <script
@@ -26,17 +22,12 @@
     <!-- Navbar -->
     <nav id="navbar">
       <div class="navbar__logo">
-        <img class="icon" src="imgs/favicon.png" alt="brand logo" />
-        <a href="#">Eunseo</a>
       </div>
       <ul class="navbar__menu">
         <li class="navbar__menu__item active" data-link="#home">Home</li>
         <li class="navbar__menu__item" data-link="#about">About</li>
         <li class="navbar__menu__item" data-link="#skills">Skills</li>
-        <li class="navbar__menu__item" data-link="#work">My work</li>
-        <li class="navbar__menu__item" data-link="#testimonials">
-          Testimonials
-        </li>
+        <li class="navbar__menu__item" data-link="#work">Projects</li>
         <li class="navbar__menu__item" data-link="#contact">Contact</li>
       </ul>
 
@@ -54,11 +45,10 @@
           class="home__avatar"
         />
         <h1 class="home__title">
-          Hello,<br />
-          I'm Eunseo Yu.
+          Hello, world!<br />
+          { name: "유은서🤗" }
         </h1>
         <h2 class="home__description">
-          If anything is worth doing, do it with all your heart.
         </h2>
         <button class="home__contact">Contact Me</button>
       </div>
@@ -68,8 +58,7 @@
     <section id="about" class="section section__container">
       <h1>About me</h1>
       <p>
-        about me about me about me about me about me about me about me about me
-        about me about me about me about me about me
+
       </p>
       <!-- Majors -->
       <div class="about__majors">
@@ -80,7 +69,7 @@
           </div>
           <h2 class="major__title">Front-end</h2>
           <div class="major__description">
-            HTML, CSS, JavaScript
+            HTML/CSS, JavaScript, Ajax
           </div>
         </div>
         <!-- Major 2 -->
@@ -90,7 +79,17 @@
           </div>
           <h2 class="major__title">Back-end</h2>
           <div class="major__description">
-            Java, JavaScript, Python, Django
+            Python, Java, SQL & NoSQL
+          </div>
+        </div>
+        <!-- Major 3 -->
+        <div class="major">
+          <div class="major__icon">
+            <i class="fab fa-sketch"></i>
+          </div>
+          <h2 class="major__title">etc.</h2>
+          <div class="major__description">
+            Django, React, AWS, Docker
           </div>
         </div>
       </div>
@@ -137,6 +136,19 @@
               청년취업아카데미 마케팅 빅데이터 실무자 양성과정
             </p>
             <p class="school__period">2019.09.04 - 2020.02.03 (500시간)</p>
+          </div>
+        </div>
+        <div class="school">
+          <img
+            src="imgs/aboutMe/multi_campus.png"
+            alt="청년취업아카데미"
+            class="school__logo"
+          />
+          <div class="school__description">
+            <p class="school__name">
+              융복합 프로젝트형 클라우드(MSA) 서비스 개발
+            </p>
+            <p class="school__period">2020.07.13 - 2020.12.24 (944시간)</p>
           </div>
         </div>
       </div>
@@ -237,117 +249,78 @@
     <!-- Work -->
     <section id="work" class="section">
       <div class="section__container">
-        <h1>My work</h1>
+        <h1>Projects</h1>
         <h3>Projects</h3>
         <div class="work__categories">
           <button class="category__btn selected" data-filter="*">
-            All <span class="category__count">4</span>
+            All
           </button>
-          <button class="category__btn" data-filter="Front-end">
-            Front-end <span class="category__count">3</span>
+          <button class="category__btn" data-filter="Django">
+            Django
           </button>
-          <button class="category__btn" data-filter="Back-end">
-            Back-end <span class="category__count">2</span>
+          <button class="category__btn" data-filter="Serverless">
+            Serverless
           </button>
-          <button class="category__btn" data-filter="Mobile">
-            Mobile <span class="category__count">1</span>
+          <button class="category__btn" data-filter="React">
+            React
           </button>
         </div>
 
         <div class="work__projects">
           <!-- project 1 -->
           <a
-            href="http://www.naver.com"
+            href="https://github.com/boolks/WEARWHAT"
             class="project"
             target="blank"
-            data-type="Front-end"
+            data-type="Django"
           >
             <img
-              src="/imgs/projects/bdata.png"
-              alt="따릉하오"
+              src="./imgs/projects/wearwhat.PNG"
+              alt="오늘 뭐입지?"
               class="project__img"
             />
             <div class="project__description">
-              <h4>따릉하오</h4>
+              <h4>오늘 뭐입지?</h4>
               <span
-                >서울시 공공자전거 따릉이 이용 & 중국인 관광객을 이용한 역사문화
-                관광지 활성화를 위한 웹</span
+                >매일 어떤 옷을 입고 어떤 신발을 신을지<br>
+                고민하는 사람들을 위한 코디 추천 사이트</span
               >
             </div>
           </a>
           <!-- project 2 -->
           <a
-            href="http://www.naver.com"
+            href="https://github.com/multicampus-3rd-project/-lky_auction"
             class="project"
             target="blank"
-            data-type="Back-end"
+            data-type="Django"
           >
             <img
-              src="/imgs/projects/example.jpeg"
-              alt="공손한 고양이"
+              src="./imgs/projects/lky.png"
+              alt="이거 경매해요 0원부터!"
               class="project__img"
             />
             <div class="project__description">
-              <h4>공손한 고양이</h4>
-              <span>제발요</span>
+              <h4>이경영:<br>이거 경매해요 0원부터!</h4>
+              <span>MSA로 구현한 간편 경매 사이트</span>
             </div>
           </a>
           <!-- project 3 -->
           <a
-            href="http://www.naver.com"
+            href="https://github.com/multicampus-final-project/-final-proejct-web"
             class="project"
             target="blank"
-            data-type="Mobile"
+            data-type="Serverless"
           >
             <img
-              src="/imgs/projects/example.jpeg"
-              alt="공손한 고양이"
+              src="./imgs/projects/urion.png"
+              alt="유리온"
               class="project__img"
             />
             <div class="project__description">
-              <h4>공손한 고양이</h4>
-              <span>모바일</span>
+              <h4>유리온</h4>
+              <span>AI와 라즈베리파이를 이용한<br>유리병 자동 분리수거기 사용자를 위한 웹</span>
             </div>
           </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="section">
-      <div class="section__container">
-        <h1>Testimonials</h1>
-        <h3>See what they say aboout me</h3>
-        <div class="testimonials">
-          <!-- Testimonial 1 -->
-          <div class="testimonial">
-            <img
-              src="imgs/testimonial/people1.jpg"
-              alt="People"
-              class="testimonial__avatar"
-            />
-            <div class="testimonial__speech-bubble">
-              <p>
-                Blah blah blah blah blah blah blah blah blah blah blah blah...
-              </p>
-              <p class="name"><a href="">Human 1</a></p>
-            </div>
-          </div>
-          <!-- Testimonial 2 -->
-          <div class="testimonial">
-            <div class="testimonial__speech-bubble">
-              <p>
-                Blah blah blah blah blah blah blah blah blah blah blah blah blah
-                blah blah...
-              </p>
-              <p class="name"><a href="">Human 2</a></p>
-            </div>
-            <img
-              src="imgs/testimonial/people1.jpg"
-              alt="People"
-              class="testimonial__avatar"
-            />
-          </div>
         </div>
       </div>
     </section>
@@ -357,7 +330,7 @@
       <h1 class="contact__title">Let's talk</h1>
       <h2 class="contact__email">youesdia0704@gmail.com</h2>
       <div class="contact__links">
-        <a href="https://github.com/yeunseo/portfolio" target="_blank">
+        <a href="https://github.com/yeunseo" target="_blank">
           <i class="fab fa-github"></i>
         </a>
       </div>
