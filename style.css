@@ -7,17 +7,11 @@
 
   --color-dark-white: #bdbdbd;
 
-  --color-pink: #cf8eba;
-
-  --color-light-pink: #dc9db7;
-
   --color-dark-grey: #4d4d4d;
 
   --color-grey: #616161;
 
   --color-light-grey: #7c7979;
-
-  --color-blue: #649cc2;
 
   --color-yellow: #fff7d1;
 
@@ -385,40 +379,6 @@ p {
   margin-top: 8px;
   background-color: var(--color-dark-white);
 }
-/* Testimonial */
-#testimonials {
-  background-color: var(--color-light-white);
-}
-.testimonials {
-  margin: 40px;
-}
-.testimonial {
-  display: flex;
-  margin: 32px 0px;
-}
-.testimonial__avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-.testimonial__avatar:nth-child(odd) {
-  margin-right: 40px;
-}
-.testimonial__avatar:nth-child(even) {
-  margin-left: 40px;
-}
-.testimonial__speech-bubble {
-  background-color: var(--color-white);
-  padding: 18px;
-  width: 100%;
-  border-radius: var(--size-border-radius);
-}
-.testimonial__speech-bubble p {
-  color: var(--color-light-grey);
-}
-.testimonial__speech-bubble a {
-  color: var(--color-light-pink);
-}
 
 /* Contact */
 #contact {
@@ -443,7 +403,7 @@ p {
 }
 /* Scroll */
 .arrow_up {
-  color: var(--color-light-pink);
+  color: var(--color-peach);
   font-size: 35px;
   margin: 15px;
   position: fixed;
@@ -481,7 +441,7 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: var(--color-light-pink);
+    background-color: var(--color-peach);
   }
 
   .section {
