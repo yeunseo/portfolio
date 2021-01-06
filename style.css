@@ -236,6 +236,7 @@ p {
 }
 
 .school {
+  margin-top: 8px;
   display: flex;
   align-items: center;
 }
@@ -284,6 +285,12 @@ p {
   display: flex;
   justify-content: space-between;
   margin: 5px;
+}
+.progress__egg > i:first-child {
+  font-size: 15px;
+}
+.progress__egg > i:last-child {
+  font-size: 23px;
 }
 .skill__bar {
   width: 100%;
