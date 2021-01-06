@@ -136,6 +136,10 @@ p {
   border-radius: var(--size-border-radius);
 }
 
+.navbar__menu__item.active {
+  border: 1px solid var(--color-white);
+}
+
 .navbar__menu__item:hover {
   border: 1px solid var(--color-white);
   background-color: var(--color-dark-peach);
@@ -345,6 +349,7 @@ p {
 .project__img {
   max-width: 100%;
   max-height: 100%;
+  margin-top: 40px;
 }
 .project__description {
   font-size: 14px;
@@ -484,7 +489,9 @@ p {
   .project {
     flex-grow: 1;
   }
-
+  .project__img {
+    margin-top: 0;
+  }
   .testimonial {
     flex-direction: column;
     align-items: center;
