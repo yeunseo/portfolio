@@ -115,7 +115,7 @@ function scrollIntoView(selector) {
 const observerOptions = {
   root: null,
   rootMargin: '0px',
-  treshold: 0.3,
+  treshold: 0.1,
 }
 const observerCallback = (entries, observer) => {
   entries.forEach(entry => {
@@ -139,7 +139,7 @@ sections.forEach(section => observer.observe(section));
 window.addEventListener('wheel', () => {
   if(window.scrollY === 0) {
     selectNavIndex = 0;
-  } else if (window.scrollY + window.innerHeight === document.body.clientHeight) {
+  } else if (Math.round(window.scrollY + window.innerHeight) >= document.body.clientHeight) {
     selectNavIndex = navItems.length - 1;
   }
   selectNavItem(navItems[selectNavIndex]);
